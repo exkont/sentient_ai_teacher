@@ -1,0 +1,56 @@
+@import "@fontsource-variable/geist-mono";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand palette in HSL for Tailwind's hsl(var(--x)) usage */
+  /* Black */
+  --background: 0 0% 0%;
+  --foreground: 0 0% 92.5%; /* Off White */
+
+  /* Surfaces */
+  --card: 0 0% 4%;
+  --card-foreground: 0 0% 92.5%;
+  --popover: 0 0% 4%;
+  --popover-foreground: 0 0% 92.5%;
+
+  /* Primary: Sentient Orange #EF4D32 ~ hsl(9, 86%, 57%) */
+  --primary: 9 86% 57%;
+  --primary-foreground: 0 0% 0%;
+
+  /* Secondary: Soft Linen #FFF4E8 ~ hsl(31, 100%, 95%) */
+  --secondary: 31 100% 95%;
+  --secondary-foreground: 0 0% 0%;
+
+  /* Muted: Dark Grey #9B9B9B ~ hsl(0, 0%, 61%) */
+  --muted: 0 0% 16%;
+  --muted-foreground: 0 0% 61%;
+
+  /* Accent: Buttermilk #FFFAF4 ~ hsl(34, 100%, 98%) */
+  --accent: 34 100% 98%;
+  --accent-foreground: 0 0% 0%;
+
+  /* Destructive */
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Controls */
+  --border: 0 0% 20%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+
+  --radius: 1rem;
+}
+
+html, body { overflow-x: hidden; }
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

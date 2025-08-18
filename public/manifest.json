@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "AI DeFi Assistant",
+  "version": "0.1.0",
+  "description": "AI DeFi Assistant",
+  "action": {
+    "default_title": "AI DeFi Assistant",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "Logo_black.png",
+    "48": "Logo_black.png",
+    "128": "Logo_black.png"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "https://api.fireworks.ai/*"
+  ]
+} 
