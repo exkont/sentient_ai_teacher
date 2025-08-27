@@ -3,7 +3,7 @@ import '@/i18n'
 import { useTranslation } from 'react-i18next'
 
 const ChatFree = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [input, setInput] = useState<string>('')
   const [history, setHistory] = useState<Array<{ role: 'user' | 'assistant', content: string }>>([])
   const [isLoading, setIsLoading] = useState<boolean>(false)
@@ -34,7 +34,7 @@ const ChatFree = () => {
           max_tokens: 1024,
           temperature: 0.7,
           messages: [
-            { role: 'system', content: 'You are a helpful assistant.' },
+            { role: 'system', content: `You are a helpful assistant. Respond strictly in ${i18n.language}.` },
             { role: 'user', content: prompt }
           ]
         })

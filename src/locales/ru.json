@@ -1,5 +1,5 @@
 {
-  "title": "AI DeFi Assistant",
+  "title": "AI Teacher",
   "start": "Начать",
   "history": "История",
   "wizard": "Мастер",
@@ -34,5 +34,12 @@
   "disclaimer_links": "Дисклеймер: будьте аккуратны со всеми ссылками. Всегда перепроверяйте и проводите своё исследование.",
   "disclaimer_no_advice": "Это не финансовый совет. Используйте на свой риск.",
   "free_chat_input_placeholder": "Введите сообщение",
-  "free_chat_send": "Отправить"
+  "free_chat_send": "Отправить",
+  "teacher_topic_placeholder": "Введите тему (например: Что такое блокчейн?)",
+  "ask": "Спросить",
+  "lesson": "Урок",
+  "lesson_title": "Интерактивный урок",
+  "lesson_step": "Шаг",
+  "lesson_steps_count": "Шагов: {{n}}",
+  "open": "Открыть"
 } 

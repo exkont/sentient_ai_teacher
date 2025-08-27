@@ -1,19 +1,31 @@
+export type LanguageOption = {
+  code: string
+  label: string
+}
+
+const languages: LanguageOption[] = [
+  { code: 'en', label: 'EN' },
+  { code: 'ru', label: 'RU' },
+  { code: 'uk', label: 'UK' },
+  { code: 'tr', label: 'TR' },
+  { code: 'zh', label: '中文' }
+]
+
 import { useTranslation } from 'react-i18next'
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
-  const languages = ['ru', 'en', 'zh', 'ua', 'tr']
-  const changeLanguage = (languageCode: string) => {
-    void i18n.changeLanguage(languageCode)
+
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    void i18n.changeLanguage(event.target.value)
   }
+
   return (
-    <div className="flex items-center gap-2 text-xs">
-      {languages.map((languageCode) => (
-        <button key={languageCode} onClick={() => changeLanguage(languageCode)} className={`px-2 py-1 rounded-md border transition ${i18n.language === languageCode ? 'bg-primary text-primary-foreground' : 'hover:bg-secondary'}`}>
-          {languageCode.toUpperCase()}
-        </button>
+    <select value={i18n.language} onChange={handleChange} className="rounded-md border px-2 py-1 bg-background">
+      {languages.map((lang) => (
+        <option key={lang.code} value={lang.code}>{lang.label}</option>
       ))}
-    </div>
+    </select>
   )
 }
 

@@ -1,5 +1,5 @@
 {
-  "title": "AI DeFi Assistant",
+  "title": "AI Teacher",
   "start": "Start",
   "history": "History",
   "wizard": "Wizard",
@@ -34,5 +34,12 @@
   "disclaimer_links": "Disclaimer: Be careful with all links. Always double-check and do your own research.",
   "disclaimer_no_advice": "This is not financial advice. Use at your own risk.",
   "free_chat_input_placeholder": "Type a message",
-  "free_chat_send": "Send"
+  "free_chat_send": "Send",
+  "teacher_topic_placeholder": "Enter a topic (e.g., What is blockchain?)",
+  "ask": "Ask",
+  "lesson": "Lesson",
+  "lesson_title": "Interactive lesson",
+  "lesson_step": "Step",
+  "lesson_steps_count": "Steps: {{n}}",
+  "open": "Open"
 } 

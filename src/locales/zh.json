@@ -1,5 +1,5 @@
 {
-  "title": "AI DeFi Assistant",
+  "title": "AI Teacher",
   "start": "开始",
   "history": "历史",
   "wizard": "向导",
@@ -34,5 +34,12 @@
   "disclaimer_links": "免责声明：请谨慎访问所有链接。请务必自行再次核实。",
   "disclaimer_no_advice": "这不是财务建议。使用风险自负。",
   "free_chat_input_placeholder": "输入消息",
-  "free_chat_send": "发送"
+  "free_chat_send": "发送",
+  "teacher_topic_placeholder": "输入主题（例如：什么是区块链？）",
+  "ask": "询问",
+  "lesson": "课程",
+  "lesson_title": "交互式课程",
+  "lesson_step": "步骤",
+  "lesson_steps_count": "步骤数：{{n}}",
+  "open": "打开"
 } 

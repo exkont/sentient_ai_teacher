@@ -2,40 +2,34 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
-export type SavedDialogue = {
+export type TeacherSavedSession = {
   id: string
   createdAt: number
-  payload: string
-  summary: string
+  topic: string
+  steps: Array<{ label: string; answer: string }>
 }
 
-const STORAGE_KEY = 'historyDialogues'
+const STORAGE_KEY = 'teacherHistorySessions'
 
 const History = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const [items, setItems] = useState<SavedDialogue[]>([])
+  const [items, setItems] = useState<TeacherSavedSession[]>([])
 
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY)
       if (!raw) return
-      const parsed = JSON.parse(raw) as SavedDialogue[]
-      setItems(parsed.slice(0, 5))
+      const parsed = JSON.parse(raw) as TeacherSavedSession[]
+      setItems(parsed.slice(0, 10))
     } catch {
       // ignore
     }
   }, [])
 
-  const handleReplay = (payloadString: string) => {
-    try {
-      const payload = JSON.parse(payloadString)
-      localStorage.setItem('lastPayload', JSON.stringify(payload))
-      window.dispatchEvent(new CustomEvent('wizard-submit', { detail: payload }))
-      navigate('/chat')
-    } catch {
-      // ignore
-    }
+  const handleOpen = (session: TeacherSavedSession) => {
+    localStorage.setItem('teacherLastSession', JSON.stringify(session))
+    navigate('/lesson')
   }
 
   return (
@@ -46,11 +40,11 @@ const History = () => {
       ) : (
         <div className="grid gap-3">
           {items.map((item) => (
-            <button key={item.id} onClick={() => handleReplay(item.payload)} className="text-left rounded-2xl border p-4 transition hover:bg-secondary hover:text-black">
+            <button key={item.id} onClick={() => handleOpen(item)} className="text-left rounded-2xl border p-4 transition hover:bg-secondary hover:text-black">
               <div className="text-xs text-muted-foreground">{new Date(item.createdAt).toLocaleString()}</div>
-              <div className="text-sm mt-1 break-all">{item.payload}</div>
-              <div className="mt-2">{item.summary}</div>
-              <div className="mt-2 text-primary underline text-sm">{t('retry')}</div>
+              <div className="font-semibold mt-1 break-words">{item.topic}</div>
+              <div className="mt-2 text-sm text-muted-foreground">{t('lesson_steps_count', { defaultValue: 'Шагов: {{n}}', n: item.steps.length })}</div>
+              <div className="mt-2 text-primary underline text-sm">{t('open', { defaultValue: 'Открыть' })}</div>
             </button>
           ))}
         </div>

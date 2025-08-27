@@ -1,5 +1,5 @@
 {
-  "title": "AI DeFi Assistant",
+  "title": "AI Teacher",
   "start": "Başlat",
   "history": "Geçmiş",
   "wizard": "Sihirbaz",
@@ -34,5 +34,12 @@
   "disclaimer_links": "Uyarı: Tüm bağlantılara dikkat edin. Her şeyi kendiniz tekrar kontrol edin.",
   "disclaimer_no_advice": "Bu bir finansal tavsiye değildir. Kendi riskinizle kullanın.",
   "free_chat_input_placeholder": "Bir mesaj yazın",
-  "free_chat_send": "Gönder"
+  "free_chat_send": "Gönder",
+  "teacher_topic_placeholder": "Bir konu girin (ör. Blockchain nedir?)",
+  "ask": "Sor",
+  "lesson": "Ders",
+  "lesson_title": "Etkileşimli ders",
+  "lesson_step": "Adım",
+  "lesson_steps_count": "Adımlar: {{n}}",
+  "open": "Aç"
 } 
