@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "pack:crx": "rm -rf build && mkdir -p build && cp -R dist build/ai-defi-sentient && cd build && zip -r ai-defi-sentient.zip ai-defi-sentient"
+    "pack:crx": "rm -rf build && mkdir -p build && cp -R dist build/ai-teacher-sentient && cd build && zip -r ai-teacher-sentient.zip ai-teacher-sentient"
   },
   "dependencies": {
     "@fontsource-variable/geist-mono": "^5.2.6",

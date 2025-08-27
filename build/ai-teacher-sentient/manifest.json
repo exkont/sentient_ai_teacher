@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "AI DeFi Assistant",
+  "name": "AI Teacher",
   "version": "0.1.0",
-  "description": "AI DeFi Assistant",
+  "description": "Interactive AI crypto teacher: lessons via follow-up questions + DeFi strategies.",
   "action": {
-    "default_title": "AI DeFi Assistant",
+    "default_title": "AI Teacher",
     "default_popup": "index.html"
   },
   "icons": {
