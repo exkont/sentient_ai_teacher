@@ -5,7 +5,7 @@
   "wizard": "Мастер",
   "chat": "Чат",
   "free_chat": "Свободный чат",
-  "home_description": "Pick a lesson or free chat.",
+  "home_description": "Выберите урок или свободный чат",
   "wizard_step": "Шаг {{n}}/4",
   "wizard_token": "Выбор токена",
   "wizard_amount": "Указание суммы",
