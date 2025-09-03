@@ -5,7 +5,7 @@
   "wizard": "Wizard",
   "chat": "Chat",
   "free_chat": "Free chat",
-  "home_description": "Pick DeFi strategies (staking, farming, liquidity) that match your goals. The dobby model will explain strategies, risks and returns.",
+  "home_description": "Pick Lesson or free chat.",
   "wizard_step": "Step {{n}}/4",
   "wizard_token": "Token selection",
   "wizard_amount": "Amount",
