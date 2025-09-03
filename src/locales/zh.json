@@ -5,7 +5,7 @@
   "wizard": "向导",
   "chat": "聊天",
   "free_chat": "自由聊天",
-  "home_description": "选择符合你目标的 DeFi 策略（质押、挖矿、流动性）。Dobby 模型将解释策略、风险和收益。",
+  "home_description": "选择符合你目标的 课程",
   "wizard_step": "第 {{n}}/4 步",
   "wizard_token": "选择代币",
   "wizard_amount": "金额",
