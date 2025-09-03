@@ -5,7 +5,7 @@
   "wizard": "Sihirbaz",
   "chat": "Sohbet",
   "free_chat": "Serbest sohbet",
-  "home_description": "Hedeflerinize uygun DeFi stratejilerini (staking, farming, likidite) seçin. Dobby modeli stratejileri, riskleri ve getirileri açıklar.",
+  "home_description": "Pick a lesson or free chat.",
   "wizard_step": "Adım {{n}}/4",
   "wizard_token": "Token seçimi",
   "wizard_amount": "Tutar",
